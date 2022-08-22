@@ -1,9 +1,6 @@
 import { Box, Center, Title, Text, Stack, Button } from "@mantine/core";
-import { GoogleAuthProvider } from "firebase/auth";
-import { auth } from "firebaseui";
 import type { NextPage } from "next";
 import Link from "next/link";
-import { StyledFirebaseAuth } from "../components/StyledFirebaseAuth";
 
 const Home: NextPage = () => {
   return (
