@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { StyledFirebaseAuth } from "../components/StyledFirebaseAuth";
 import { auth } from "../vendor/firebase";
-import { GoogleAuthProvider } from "firebase/auth";
+import { EmailAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import { Box, Center } from "@mantine/core";
 
 const Auth: NextPage = () => {
