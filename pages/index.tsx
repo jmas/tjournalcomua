@@ -1,9 +1,13 @@
 import { Box, Center, Title, Text, Stack, Button } from "@mantine/core";
 import type { NextPage } from "next";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    window.location.href = "https://ujournal.com.ua";
+  }, []);
+
   const content = useMemo(() => {
     if (
       typeof window !== "undefined" &&
@@ -12,7 +16,9 @@ const Home: NextPage = () => {
     ) {
       return (
         <>
-          <Title order={1}>Це версія TJournal для українського суспільства 🇺🇦</Title>
+          <Title order={1}>
+            Це версія TJournal для українського суспільства 🇺🇦
+          </Title>
           <Text>
             Привіт! Як ти вже знаєш, наш улюблений проєкт, який має такі
             властивості, як лампова атмосфера і ліберальні погляди на світ,
@@ -48,7 +54,9 @@ const Home: NextPage = () => {
 
     return (
       <>
-        <Title order={1}>Это реинкарнация TJournal для украинского сообщества 🇺🇦</Title>
+        <Title order={1}>
+          Это реинкарнация TJournal для украинского сообщества 🇺🇦
+        </Title>
         <Text>
           Привет! Как ты уже знаешь, наш любимый проект, который имеет такие
           качества, как ламповая атмосфера и либеральные взгляды на мир,
