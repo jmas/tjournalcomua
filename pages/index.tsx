@@ -4,10 +4,6 @@ import Link from "next/link";
 import { useEffect, useMemo } from "react";
 
 const Home: NextPage = () => {
-  useEffect(() => {
-    window.location.href = "https://ujournal.com.ua";
-  }, []);
-
   const content = useMemo(() => {
     if (
       typeof window !== "undefined" &&
