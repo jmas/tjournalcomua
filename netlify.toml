@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/"
+  to = "https://ujournal.com.ua"
+  status = 300
+  force = true
+  
